@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>?? Love you ??</title>
+  <title> Love you </title>
   <style type="text/css">
     body {
       margin: 0;
@@ -158,7 +158,7 @@
         "#5d3f51",
         "#61649f",
         "#0f59a4"
-      ]; //ÓÃÀ´ÉèÖÃµÄÑÕÉ«
+      ]; //ç”¨æ¥è®¾ç½®çš„é¢œè‰²
       var canvas = document.getElementById("canvas");
       var ctx = canvas.getContext("2d");
       let count = 1;
@@ -207,7 +207,7 @@
       };
       Heart.prototype.draw = function (i, text) {
         ctx.globalAlpha = this.opacity;
-        ctx.font = `${180 * this.scale}px "Î¢ÈíÑÅºÚ"`;
+        ctx.font = `${180 * this.scale}px "å¾®è½¯é›…é»‘"`;
         // ctx.font="20px";
         ctx.fillStyle = colorss[i % 18];
         ctx.fillText(
@@ -221,7 +221,7 @@
 
       function render() {
         ctx.clearRect(0, 0, ww, wh);
-        // ĞŞ¸ÄÎÄ×Ö ÏëÒª¶à¼¸¸öÆ®×ÅµÄÎÄ×Ö
+        // ä¿®æ”¹æ–‡å­— æƒ³è¦å¤šå‡ ä¸ªé£˜ç€çš„æ–‡å­—
         var text = [ 'I Love You','??','??']
         for (var i = 0; i < 100; i++) {
           hearts[i].update(i);
@@ -464,7 +464,7 @@
             context.lineTo(point.x, point.y);
           }
           context.closePath();
-          // ĞŞ¸Ä°®ĞÄÑÕÉ«
+          // ä¿®æ”¹çˆ±å¿ƒé¢œè‰²
           context.fillStyle = "#ff0000";
           context.fill();
           // create the image
@@ -570,8 +570,8 @@
     fillText();
     heartBeat();
 
-    // ¶¯»­ÏßÌõ»­°®ĞÄ·½·¨
-    // »­Íê²Å³öÏÖÎÄ×Ö ºÍÂúÆÁ°®ĞÄ
+    // åŠ¨ç”»çº¿æ¡ç”»çˆ±å¿ƒæ–¹æ³•
+    // ç”»å®Œæ‰å‡ºç°æ–‡å­— å’Œæ»¡å±çˆ±å¿ƒ
     // lineHeartAni();
   </script>
 </body>
